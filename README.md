@@ -9,7 +9,8 @@ This repository contains my coursework for WNM 608.
 
 ## Modules
 
-[Module 1](modules/module_01/index.html)
+[Module 1 – Live Site](https://rbdesigns2026.github.io/wnm608_202190_OL1/modules/module_01/)
+
 
 
 

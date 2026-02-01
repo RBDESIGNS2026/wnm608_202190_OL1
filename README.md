@@ -10,6 +10,7 @@ This repository contains my coursework for WNM 608.
 ## Modules
 Each module contains weekly assignments and exercises.
 
+file:///Users/truemadgirlartist/Desktop/wnm608/rebekahbrown/index.html
 - [Module 1](file:///Users/truemadgirlartist/Desktop/wnm608/rebekahbrown/index.html)
   
 

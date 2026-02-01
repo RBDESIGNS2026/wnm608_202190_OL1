@@ -9,9 +9,8 @@ This repository contains my coursework for WNM 608.
 
 ## Modules
 
-[Module 1](file:///Users/truemadgirlartist/Desktop/wnm608/rebekahbrown/index.html/)
+[Module 1](modules/module_01/index.html)
 
-[GitHub Test](https://github.com)
 
 
 

@@ -7,7 +7,10 @@ Git Hub Class Repo -  https://github.com/RBDESIGNS2026/wnm608_202190_OL1
 My Host Site - https://rbdesigns2026.github.io/neonkactus/
 
 
-Module 2  2.1 Create a Landing Page Discussion 
+Module 2  2.1 Create a Landing Page Discussion
+
+https://rbdesigns2026.github.io/neonkactus/module-2-landing-page/
+
 
 
 

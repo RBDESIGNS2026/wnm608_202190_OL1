@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: url("../img/plant.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.wrapper {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 60px;   /* bigger */
+  margin-bottom: 16px;
+  color: #000000;    /* black */
+}
+
+p {
+  font-size: 22px;
+  color: #000000;    /* black */
+  margin: 0;
+}
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+
+  background: url("../img/plant.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+

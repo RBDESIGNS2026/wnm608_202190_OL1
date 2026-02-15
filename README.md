@@ -3,7 +3,7 @@
 
 MODULE 1.1 PUSH TO GITHUB & SETUP 
 
-Assignment - https://rbdesigns2026.github.io/neonkactus/module-1-github-setup/
+Assignment - 
 
 My Host Site - https://rbdesigns2026.github.io/neonkactus
 
@@ -12,7 +12,7 @@ ________________________________________________________________________________
 
 MODULE 2.1  - CREATE A LANDING PAGE
 
-Assignment - https://rbdesigns2026.github.io/neonkactus/module-2-landing-page/
+Assignment -
 
 __________________________________________________________________________________
 

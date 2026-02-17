@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Neon Kactus</title>
+  <title>Layout Template</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="lib/css/styleguide.css">
-<link rel="stylesheet" href="lib/css/grid.css">
-<link rel="stylesheet" href="css/storetheme.css">
 
+  <link rel="stylesheet" href="lib/css/styleguide.css">
+  <link rel="stylesheet" href="lib/css/grid.css">
+  <link rel="stylesheet" href="css/storetheme.css">
 </head>
 
 <body>
 
   <!-- TOP BAR -->
-  <header class="top-bar">
+  <header class="top-bar container">
     <h1 class="site-title">Neon Kactus</h1>
 
     <nav class="top-nav">
@@ -25,7 +25,7 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero container">
     <h2>Welcome to our site</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -37,28 +37,30 @@
     </div>
   </section>
 
-  <!-- ARTICLES -->
+  <!-- ARTICLES (GRID DEMO) -->
   <main class="container">
-    <section class="articles">
-      <article id="article1">
+    <section class="grid gap">
+
+      <article id="article1" class="col-12 col-md-6">
         <h3>Article 1</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </article>
 
-      <article id="article2">
+      <article id="article2" class="col-12 col-md-6">
         <h3>Article 2</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </article>
 
-      <article id="article3">
+      <article id="article3" class="col-12 col-md-6">
         <h3>Article 3</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </article>
 
-      <article id="article4">
+      <article id="article4" class="col-12 col-md-6">
         <h3>Article 4</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </article>
+
     </section>
   </main>
 

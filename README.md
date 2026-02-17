@@ -1,10 +1,10 @@
-# AAU_WNM 608_Rebekah Brown  https://github.com/RBDESIGNS2026/wnm608_202190_OL1
+# AAU_WNM 608 - MODULE ASSIGNMENTS - Rebekah Brown
 
 
 
 MODULE 1.1 PUSH TO GITHUB & SETUP 
 
-Assignment - 
+Assignment - New Git Hub Repo https://github.com/RBDESIGNS2026/wnm608_202190_OL1
 
 My Host Site - https://neonkactus.shop/
 

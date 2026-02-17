@@ -1,6 +1,24 @@
 /* =========================
    NAVIGATION
 ========================= */
+.top-bar {
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.top-nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -82,4 +100,14 @@
 
 .feature-box p {
     font-size: 14px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+  margin: 5rem 0 2rem;
 }

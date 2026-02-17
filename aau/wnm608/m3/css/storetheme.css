@@ -1,0 +1,177 @@
+/* =========================
+   NAVIGATION
+========================= */
+
+.top-bar {
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.top-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.top-nav a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  max-width: 700px;
+  margin: 3rem auto 5rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero p {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 250px;
+  background: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+
+
+/* =========================
+   GRID SECTION CARD
+========================= */
+
+.demo-section {
+  background: transparent;              /* no fill */
+  padding: 3rem;
+  border-radius: 22px;
+
+  /* Soft outline (like your small squares) */
+  outline: 1px solid #dcdcdc;
+
+  /* Soft elevation */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+
+  margin: 3rem 0;
+}
+
+
+
+/* =========================
+   GRID COLUMN TEXT ONLY
+========================= */
+
+.demo-box {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  text-align: center;
+}
+
+
+
+/* =========================
+   ARTICLE CARDS
+========================= */
+
+article {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.article-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.article-header h3 {
+  margin: 0;
+}
+
+.time {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+/* =========================
+   IMAGE CARD ROW
+========================= */
+
+.image-card {
+  background: #ffffff;
+  padding: 1.75rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.image-card .image-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #dcdcdc;
+  border-radius: 14px;
+}
+
+/* =========================
+   IMAGE CARD SECTION
+========================= */
+
+.image-card-section {
+  margin: 4rem 0;
+}
+
+.image-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.image-placeholder-box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #cfcfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+  margin: 5rem 0 2rem;
+}

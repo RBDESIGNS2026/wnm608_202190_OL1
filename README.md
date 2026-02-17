@@ -20,6 +20,12 @@ Assignment - https://neonkactus.shop/aau/wnm608/m2/
 __________________________________________________________________________________
 
 
+MODULE 3.1  - CLIENT PROPOSAL  
+
+Assignment - 
+
+GRIDSYSTEM LAYOUT CREATED - https://neonkactus.shop/aau/wnm608/m3/
+
 
 
 

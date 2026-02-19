@@ -1,0 +1,319 @@
+index.html
+/* ==========================================
+   NEON KACTUS STYLE GUIDE THEME
+   Calm + Intentional Editorial Layout
+   Assignment Structure Preserved
+========================================== */
+
+
+/* =========================
+   COLOR SYSTEM
+========================= */
+
+:root {
+  --color-neutral-light: #F2EEE8;   /* Warm Ivory */
+  --color-neutral-medium: #E6E0D7;  /* Soft Stone */
+  --color-neutral-dark: #1E1E1E;    /* Deep Charcoal */
+
+  --color-main-light: #8FA090;      /* Muted Sage */
+  --color-main-medium: #5A7A8C;     /* Deep Desert Blue */
+}
+
+
+/* =========================
+   GLOBAL BASE
+========================= */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background-color: var(--color-neutral-light);
+  color: var(--color-neutral-dark);
+  line-height: 1.6;
+}
+
+.container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1 {
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h4, h5, h6 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #666;
+  max-width: 65ch;
+}
+
+
+/* =========================
+   NAVIGATION SYSTEM
+========================= */
+
+.navbar {
+  background-color: var(--color-neutral-light);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  padding: 1rem 0;
+}
+
+.nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav li {
+  margin-right: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-neutral-dark);
+  transition: 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--color-main-medium);
+}
+
+.nav .active a {
+  color: var(--color-main-medium);
+}
+
+
+/* ----- Nav Variations (Assignment Required) ----- */
+
+.nav-flex ul {
+  display: flex;
+}
+
+.nav-stretch ul {
+  display: flex;
+}
+
+.nav-stretch li {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-pills a {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background-color: var(--color-neutral-medium);
+}
+
+.nav-pills .active a {
+  background-color: var(--color-main-medium);
+  color: white;
+}
+
+.nav-crumbs li {
+  display: inline;
+}
+
+.nav-crumbs li::after {
+  content: "/";
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+.nav-crumbs li:last-child::after {
+  content: "";
+}
+
+.nav-material a {
+  background: var(--color-main-medium);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+
+
+/* =========================
+   CARD SYSTEM
+========================= */
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.card.soft {
+  background: var(--color-neutral-medium);
+}
+
+.card.hard {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.card.dark {
+  background: var(--color-neutral-dark);
+  color: white;
+}
+
+.card.medium {
+  background: var(--color-main-light);
+  color: white;
+}
+
+.card.flat {
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+
+/* =========================
+   VIEW WINDOW
+========================= */
+
+.view-window-container {
+  background-color: var(--color-neutral-medium);
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+
+/* =========================
+   TABLE SYSTEM
+========================= */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.table th {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--color-main-medium);
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+.table td {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.striped tbody tr:nth-child(odd) {
+  background-color: var(--color-neutral-medium);
+}
+
+.lined td,
+.lined th {
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.vertical td {
+  border-left: 1px solid rgba(0,0,0,0.08);
+}
+
+
+/* =========================
+   FORM SYSTEM
+========================= */
+
+form {
+  margin-top: 1rem;
+}
+
+input {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-main-medium);
+}
+
+.form-input {
+  border: 2px solid var(--color-main-medium);
+}
+
+
+/* =========================
+   BUTTON SYSTEM
+========================= */
+
+button,
+.nav-material a {
+  background: var(--color-main-medium);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+button:hover,
+.nav-material a:hover {
+  background: var(--color-main-light);
+}
+
+
+/* =========================
+   FLEX ENHANCEMENTS
+========================= */
+
+.display-flex {
+  gap: 1rem;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}

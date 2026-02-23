@@ -9,8 +9,7 @@ My Host Site - https://neonkactus.shop/
 https://neonkactus.shop/aau/wnm608/m1/
 _________________________________________________________________________________
 
-MO
-DULE 2.1  - CREATE A LANDING PAGE
+MODULE 2.1  - CREATE A LANDING PAGE
 
 Assignment - 
 https://neonkactus.shop/aau/wnm608/m2/
@@ -22,7 +21,11 @@ MODULE 3.1  - CLIENT PROPOSAL
 Assignment - 
 GRIDSYSTEM LAYOUT CREATED - https://neonkactus.shop/aau/wnm608/m3/
 
+_________________________________________________________________________________
 
+MODULE 4.1  - CREATE STYLE GUILE 
+
+Assignment - https://neonkactus.shop/aau/wnm608/m4/styleguide/index.html
 
 
 

@@ -1,4 +1,4 @@
-# AAU_WNM 608 - MODULE ASSIGNMENTS - Rebekah Brown
+# AAU_WNM 608 - Module Assignments - Rebekah Brown
 
 
 MODULE 1.1 PUSH TO GITHUB & SETUP 

@@ -5,11 +5,13 @@ MODULE 1.1 PUSH TO GITHUB & SETUP
 
 Assignment - 
 Git Hub Repo -  https://github.com/RBDESIGNS2026/wnm608_202190_OL1
+
 My Host Site - https://neonkactus.shop/
+
 https://neonkactus.shop/aau/wnm608/m1/
 _________________________________________________________________________________
 
-MODULE 2.1  - CREATE A LANDING PAGE
+MODULE 2.1  - LANDING PAGE
 
 Assignment - 
 https://neonkactus.shop/aau/wnm608/m2/
@@ -23,7 +25,7 @@ GRIDSYSTEM LAYOUT CREATED - https://neonkactus.shop/aau/wnm608/m3/
 
 _________________________________________________________________________________
 
-MODULE 4.1  - CREATE STYLE GUILE 
+MODULE 4.1  - STYLE GUILE 
 
 Assignment - https://neonkactus.shop/aau/wnm608/m4/styleguide/index.html
 

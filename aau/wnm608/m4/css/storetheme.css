@@ -1,0 +1,596 @@
+/* =========================================
+   NEON KACTUS DESIGN SYSTEM
+========================================= */
+
+/* -------------------------
+   BRAND VARIABLES
+------------------------- */
+
+:root {
+  --ivory: #F2EEE8;
+  --stone: #E6E0D7;
+  --sage: #8FA090;
+  --blue: #5A7A8C;
+  --charcoal: #1E1E1E;
+  --gold: #D4AF37;
+
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.04);
+  --shadow-hard: 0 28px 70px rgba(0,0,0,0.12);
+}
+
+/* -------------------------
+   GLOBAL
+------------------------- */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--ivory);
+  color: var(--charcoal);
+  line-height: 1.7;
+  border-top: 15px solid var(--gold);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* -------------------------
+   TYPOGRAPHY
+------------------------- */
+
+h1 {
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  font-size: 3.75rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Gold underline accent */
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  margin-top: 12px;
+}
+
+h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+}
+
+.spec {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: -0.75rem;
+  margin-bottom: 2rem;
+}
+
+.accent-gold {
+  color: var(--gold);
+}
+
+/* -------------------------
+   SECTION SPACING
+------------------------- */
+
+.sg-section,
+.container {
+  margin: 8rem auto;
+}
+
+/* -------------------------
+   DIVIDER
+------------------------- */
+
+.divider {
+  height: 1px;
+  background: var(--stone);
+  margin: 5rem 0;
+}
+
+/* -------------------------
+   CARD SYSTEM
+------------------------- */
+
+/* Default */
+.card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--stone);
+  box-shadow: none;
+  margin-bottom: 2rem;
+}
+
+/* Soft */
+.card.soft {
+  background: var(--stone);
+  border: none;
+  box-shadow: none;
+}
+
+/* Hard */
+.card.hard {
+  background: #ffffff;
+  border: none;
+  box-shadow: var(--shadow-hard);
+}
+
+/* Dark */
+.card.dark {
+  background: var(--charcoal);
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+}
+
+/* -------------------------
+   ICONOGRAPHY
+------------------------- */
+
+.icon-row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+/* -------------------------
+   COLOR SYSTEM
+------------------------- */
+
+.color-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.color-swatch {
+  flex: 1;
+  padding: 3rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.ivory { background: var(--ivory); }
+.stone { background: var(--stone); }
+.sage { background: var(--sage); color: white; }
+.blue { background: var(--blue); color: white; }
+.charcoal { background: var(--charcoal); color: white; }
+.gold { background: var(--gold); color: white; }
+
+/* -------------------------
+   BUTTON SYSTEM
+------------------------- */
+
+.button-row {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: #ffffff;
+  padding: 0.85rem 2rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+  background: var(--charcoal);
+}
+
+.btn-outline {
+  border: 2px solid var(--blue);
+  background: transparent;
+  color: var(--blue);
+  padding: 0.85rem 2rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-outline:hover {
+  background: var(--blue);
+  color: white;
+}
+
+.btn-primary:disabled {
+  background: #b7c3c9;
+  cursor: not-allowed;
+}
+
+/* -------------------------
+   NAVIGATION
+------------------------- */
+
+nav {
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-evenly;   /* clean spacing across */
+  align-items: center;
+}
+
+.nav li {
+  flex: 1;
+  text-align: center;              /* keeps text centered in each space */
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--charcoal);
+  font-weight: 600;
+  display: block;
+  padding: 1rem 0;
+  transition: 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--gold);
+}
+
+/* Active State */
+.nav li.active a {
+  color: var(--gold);
+}
+
+
+
+/* -------------------------
+   TABLES
+------------------------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--stone);
+}
+
+td {
+  padding: 1rem 0;
+}
+
+
+
+/* -------------------------
+   FORMS
+------------------------- */
+
+.form-control {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--stone);
+  font-family: 'Inter', sans-serif;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+/* -------------------------
+   SPACING DEMO UTILITIES
+------------------------- */
+
+.space-demo {
+  height: 8px;
+  background: var(--stone);
+  margin-bottom: 1rem;
+}
+
+.space-demo.medium {
+  height: 16px;
+}
+
+.space-demo.large {
+  height: 32px;
+}
+
+
+/* =========================
+   NAVIGATION EXAMPLES
+========================= */
+
+/* Base layout */
+.nav-flex ul,
+.nav-stretch ul,
+.nav-pills ul,
+.nav-crumbs ul,
+.nav-material ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* FLEX */
+.nav-flex ul {
+  justify-content: flex-start;
+}
+
+/* STRETCH */
+.nav-stretch ul {
+  justify-content: space-between;
+}
+
+.nav-stretch li {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-stretch a.active {
+  background: var(--blue);
+  color: white;
+  padding: 0.75rem 0;
+  border-radius: var(--radius-sm);
+}
+
+/* PILLS */
+.nav-pills a {
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+}
+
+.nav-pills a.active {
+  background: var(--blue);
+  color: white;
+}
+
+/* CRUMBS */
+.nav-crumbs ul {
+  gap: 0.5rem;
+}
+
+.nav-crumbs a {
+  text-decoration: none;
+  color: var(--charcoal);
+}
+
+.nav-crumbs a.active {
+  color: var(--gold);
+}
+
+/* MATERIAL */
+.nav-material ul {
+  justify-content: space-between;
+}
+
+.nav-material li {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-material a {
+  display: block;
+  padding: 0.75rem 0;
+  position: relative;
+}
+
+.nav-material a.active {
+  border-bottom: 3px solid var(--blue);
+}
+
+.nav-material a.active {
+  border-bottom: 3px solid var(--blue);
+}
+
+/* =========================
+   TABLE SYSTEM
+========================= */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: white;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Base header style */
+.table thead {
+  background: var(--stone);
+  font-weight: 700;
+}
+
+.table thead th {
+  border-bottom: 2px solid var(--gold);
+}
+
+/* 1. Border Version */
+.table-border th,
+.table-border td {
+  border-bottom: 1px solid var(--stone);
+}
+
+/* 2. Lined All */
+.table-all th,
+.table-all td {
+  border: 1px solid var(--stone);
+}
+
+.table-all tbody tr:nth-child(even) {
+  background: rgba(0,0,0,0.03);
+}
+
+/* 3. Combination */
+.table-combo th,
+.table-combo td {
+  border: 1px solid var(--stone);
+}
+
+.table-combo tbody tr:nth-child(even) {
+  background: var(--stone);
+}
+
+
+/* =========================
+   PRODUCT FIGURES
+========================= */
+
+.figure {
+  margin: 0;
+}
+
+.figure img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+.figure figcaption {
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+/* =========================
+   PRODUCT OVERLAY
+========================= */
+
+.product-overlay {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.product-overlay img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.product-overlay figcaption {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.product-overlay:hover figcaption {
+  opacity: 1;
+}
+
+.product-overlay:hover img {
+  transform: scale(1.1);
+}
+
+.overlay-box {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  font-weight: 600;
+}
+
+
+
+/* =========================
+   PRODUCT GRID ONLY
+========================= */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+   PRODUCT IMAGE FIX
+========================= */
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  height: 300px;        /* forces equal height */
+  object-fit: cover;    /* crops instead of stretching */
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+
+
+

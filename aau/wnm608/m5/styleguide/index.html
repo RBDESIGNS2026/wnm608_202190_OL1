@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Kactus Style Guide</title>
+
+<link rel="stylesheet" href="../lib/css/styleguide.css">
+<link rel="stylesheet" href="../lib/css/gridsystem.css">
+<link rel="stylesheet" href="../css/storetheme.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+</style>
+
+
+<!-- jQuery (REQUIRED for instructor script) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container display-flex">
+    <div class="flex-none">
+      <h1 class="title">NEON KACTUS®</h1>
+      <p>Elevated Botanical Design System</p>
+    </div>
+    
+  </div>
+</header>
+
+<!-- TABLE OF CONTENTS -->
+<div class="container" id="tableofcontents">
+  <div class="card soft">
+    <h2>Table of Contents</h2>
+    <ul>
+      <li><a href="#iconography">Iconography</a></li>
+      <li><a href="#colors">Color System</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#buttons">Buttons</a></li>
+      <li><a href="#cards">Cards</a></li>
+      <li><a href="#navigation">Navigation</a></li>
+      <li><a href="#gridsystem">Grid System</a></li>
+      <li><a href="#flexsystem">Flex System</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#forms">Forms</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ICONOGRAPHY -->
+<section class="sg-section container" id="iconography">
+  <h2>Iconography</h2>
+  <div class="icon-row">
+    <div class="icon">♡</div>
+    <div class="icon">🛒</div>
+    <div class="icon">→</div>
+  </div>
+</section>
+
+<!-- COLOR SYSTEM -->
+<section class="sg-section container" id="colors">
+  <h2>Color System</h2>
+  <div class="color-row">
+    <div class="color-swatch ivory">#F2EEE8</div>
+    <div class="color-swatch stone">#E6E0D7</div>
+    <div class="color-swatch sage">#8FA090</div>
+    <div class="color-swatch blue">#5A7A8C</div>
+    <div class="color-swatch charcoal">#1E1E1E</div>
+    <div class="color-swatch gold">#D4AF37</div>
+
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section class="sg-section container" id="typography">
+  <h2>Typography</h2>
+
+  <div class="type-example">
+    <h1 class="display">Elevated Botanical Design</h1>
+    <p class="spec">Inter Black • -0.03em</p>
+  </div>
+
+  <div class="type-example">
+    <h2 class="heading">Modern Plants for Modern Spaces</h2>
+    <p class="spec">Inter Extra Bold • -0.01em</p>
+  </div>
+
+  <div class="type-example">
+    <p class="body-text">
+      Neon Kactus curates premium botanical specimens and contemporary planters
+      designed for refined interiors. Plants are essential components of intentional space.
+    </p>
+  </div>
+</section>
+
+<!-- BUTTONS -->
+<section class="sg-section container" id="buttons">
+  <h2>Buttons</h2>
+  <div class="button-row">
+    <button class="btn-primary">Primary</button>
+    <button class="btn-outline">Secondary</button>
+    <button class="btn-primary" disabled>Disabled</button>
+  </div>
+</section>
+
+<!-- CARDS -->
+<div class="container" id="cards">
+  <h2>Cards</h2>
+  <div class="grid gap">
+    <div class="col-3"><div class="card">Default</div></div>
+    <div class="col-3"><div class="card soft">Soft</div></div>
+    <div class="col-3"><div class="card hard">Hard</div></div>
+    <div class="col-3"><div class="card dark">Dark</div></div>
+  </div>
+</div>
+
+
+
+
+<!-- FIGURES -->
+<div class="container" id="figures">
+
+<h2>Figures</h2>
+
+<!-- BASIC PRODUCT -->
+<div class="card">
+  <h3>Basic Product</h3>
+
+  <figure class="figure">
+    <a href="product.html">
+      <img src="https://picsum.photos/800/500" alt="">
+      <figcaption>Product</figcaption>
+    </a>
+  </figure>
+</div>
+
+
+
+<!-- PRODUCT GRID -->
+<div class="card">
+  <h3>Product Grid</h3>
+
+  <div class="product-grid grid">
+
+    <figure class="figure">
+      <a href="product.html">
+        <img src="https://picsum.photos/400" alt="">
+        <figcaption>
+          Product Name<br>$39.99
+        </figcaption>
+      </a>
+    </figure>
+
+    <figure class="figure">
+      <a href="product.html">
+        <img src="https://picsum.photos/401" alt="">
+        <figcaption>
+          Product Name<br>$39.99
+        </figcaption>
+      </a>
+    </figure>
+
+    <figure class="figure">
+      <a href="product.html">
+        <img src="https://picsum.photos/402" alt="">
+        <figcaption>
+          Product Name<br>$39.99
+        </figcaption>
+      </a>
+    </figure>
+
+  </div>
+</div>
+
+
+
+
+<!-- PRODUCT OVERLAY -->
+
+<div class="card">
+  <h3>Product Overlay</h3>
+
+  <div class="product-grid grid">
+
+    <figure class="figure product-overlay">
+      <a href="product.html">
+        <img src="https://picsum.photos/403" alt="">
+        <figcaption>
+          <div class="overlay-box">
+            <div>Product Name</div>
+            <div>$39.99</div>
+          </div>
+        </figcaption>
+      </a>
+    </figure>
+
+    <figure class="figure product-overlay">
+      <a href="product.html">
+        <img src="https://picsum.photos/404" alt="">
+        <figcaption>
+          <div class="overlay-box">
+            <div>Product Name</div>
+            <div>$39.99</div>
+          </div>
+        </figcaption>
+      </a>
+    </figure>
+
+    <figure class="figure product-overlay">
+      <a href="product.html">
+        <img src="https://picsum.photos/405" alt="">
+        <figcaption>
+          <div class="overlay-box">
+            <div>Product Name</div>
+            <div>$39.99</div>
+          </div>
+        </figcaption>
+      </a>
+    </figure>
+
+  </div>
+</div>
+
+
+
+<!-- NAVIGATION -->
+<div class="container" id="navigation">
+  <h2>Navigation</h2>
+
+  <div class="card soft">
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Care Guide</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="card soft">
+    <nav class="nav nav-pills">
+      <ul>
+        <li><a href="#">Indoor</a></li>
+        <li><a href="#">Outdoor</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- GRID -->
+<div class="container" id="gridsystem">
+  <h2>Grid System</h2>
+  <div class="grid gap">
+    <div class="col-4"><div class="card">4</div></div>
+    <div class="col-4"><div class="card">4</div></div>
+    <div class="col-4"><div class="card">4</div></div>
+  </div>
+</div>
+
+<!-- FLEX -->
+<div class="container" id="flexsystem">
+  <h2>Flex System</h2>
+  <div class="display-flex">
+    <div class="card flex-stretch">Flex 1</div>
+    <div class="card flex-stretch">Flex 2</div>
+    <div class="card flex-stretch">Flex 3</div>
+  </div>
+</div>
+
+<!-- TABLE -->
+<div class="container" id="tables">
+  <h2>Tables</h2>
+  <div class="card soft">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Plant</th>
+          <th>Light</th>
+          <th>Water</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fiddle Leaf Fig</td>
+          <td>Bright Indirect</td>
+          <td>Weekly</td>
+          <td>$89</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<!-- NAVIGATION EXAMPLES (Instructor Demo) -->
+<div class="container" id="navigation-examples">
+  <h2>Navigation Examples</h2>
+
+  <!-- Flex Nav -->
+  <div class="card soft">
+    <h3>Flex Nav</h3>
+    <nav class="nav nav-flex">
+      <ul>
+        <li><a href="#" class="active">home</a></li>
+        <li><a href="#">store</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Stretch Nav -->
+  <div class="card soft">
+    <h3>Stretch Nav</h3>
+    <nav class="nav nav-stretch">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#" class="active">store</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Pills Nav -->
+  <div class="card soft">
+    <h3>Pills Nav</h3>
+    <nav class="nav nav-pills">
+      <ul>
+        <li><a href="#" class="active">home</a></li>
+        <li><a href="#">store</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Crumbs Nav -->
+  <div class="card soft">
+    <h3>Crumbs Nav</h3>
+    <nav class="nav nav-crumbs">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li>/</li>
+        <li><a href="#" class="active">store</a></li>
+        <li>/</li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Material Nav -->
+  <div class="card soft">
+    <h3>Material Nav</h3>
+    <nav class="nav nav-material">
+      <ul>
+        <li><a href="#" class="active">home</a></li>
+        <li><a href="#">store</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+<!-- Striped Lined Border -->
+<div class="card soft">
+  <h3>Striped Lined Border</h3>
+  <table class="table table-border">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Office</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td><td>522</td><td>Hamilton Cline</td><td>hcline@academyart.edu</td><td>555-2424</td>
+      </tr>
+      <tr>
+        <td>2</td><td>512</td><td>Fred McHale</td><td>fmchale@academyart.edu</td><td>555-2424</td>
+      </tr>
+      <tr>
+        <td>3</td><td>522</td><td>Michael Catanzaro</td><td>mcatanza@academyart.edu</td><td>555-2424</td>
+      </tr>
+      <tr>
+        <td>4</td><td>514</td><td>Andrea Pimentel</td><td>apimentel@academyart.edu</td><td>555-2424</td>
+      </tr>
+      <tr>
+        <td>5</td><td>516</td><td>DC Scarpelli</td><td>dscarpelli@academyart.edu</td><td>555-2424</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- Striped Lined All -->
+<div class="card soft">
+  <h3>Striped Lined All</h3>
+  <table class="table table-all">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Office</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td><td>522</td><td>Hamilton Cline</td><td>hcline@academyart.edu</td><td>555-2424</td>
+      </tr>
+      <tr>
+        <td>2</td><td>512</td><td>Fred McHale</td><td>fmchale@academyart.edu</td><td>555-2424</td>
+      </tr>
+      <tr>
+        <td>3</td><td>522</td><td>Michael Catanzaro</td><td>mcatanza@academyart.edu</td><td>555-2424</td>
+      </tr>
+      <tr>
+        <td>4</td><td>514</td><td>Andrea Pimentel</td><td>apimentel@academyart.edu</td><td>555-2424</td>
+      </tr>
+      <tr>
+        <td>5</td><td>516</td><td>DC Scarpelli</td><td>dscarpelli@academyart.edu</td><td>555-2424</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- Combination -->
+<div class="card soft">
+  <h3>Combination</h3>
+  <table class="table table-combo">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Office</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td><td>522</td><td>Hamilton Cline</td><td>hcline@academyart.edu</td><td>555-2424</td>
+      </tr>
+      <tr>
+        <td>2</td><td>512</td><td>Fred McHale</td><td>fmchale@academyart.edu</td><td>555-2424</td>
+      </tr>
+      <tr>
+        <td>3</td><td>522</td><td>Michael Catanzaro</td><td>mcatanza@academyart.edu</td><td>555-2424</td>
+      </tr>
+      <tr>
+        <td>4</td><td>514</td><td>Andrea Pimentel</td><td>apimentel@academyart.edu</td><td>555-2424</td>
+      </tr>
+      <tr>
+        <td>5</td><td>516</td><td>DC Scarpelli</td><td>dscarpelli@academyart.edu</td><td>555-2424</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+
+<!-- FORMS -->
+<div class="container" id="forms">
+  <h2>Forms</h2>
+
+  <!-- Form Buttons -->
+  <div class="card soft">
+    <h3>Form Buttons</h3>
+    <div class="button-row">
+      <button class="form-button">Button</button>
+      <input type="button" value="Input" class="form-button">
+      <a href="#" class="form-button">Anchor</a>
+    </div>
+  </div>
+
+  <!-- Hotdog -->
+  <div class="card soft">
+    <h3>Hotdog</h3>
+
+    <div class="hotdog-row">
+  <input type="search" class="hotdog" placeholder="Search">
+  <input type="search" class="hotdog hotdog-dark" placeholder="Search">
+</div>
+
+    <div class="hotdog-wrap">
+      <input type="search" class="hotdog hotdog-inset" placeholder="Search">
+    </div>
+
+    <div class="hotdog-icon">
+      <span>☰</span>
+      <input type="search" placeholder="Search">
+    </div>
+
+    <div class="hotdog-icon">
+      <input type="search" placeholder="Search">
+      <span>≡</span>
+    </div>
+  </div>
+
+  <!-- Select -->
+  <div class="card soft">
+    <h3>Select</h3>
+    <div class="form-select">
+      <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Checkboxes -->
+  <div class="card soft">
+    <h3>Check Boxes</h3>
+
+    <label>
+      Label
+      <input type="checkbox">
+    </label>
+
+    <div class="favorite">
+      <input type="checkbox" id="heart-example" class="hidden">
+      <label for="heart-example">♥</label>
+    </div>
+
+    <div class="toggle">
+      <input type="checkbox" id="toggle-1" class="hidden">
+      <label for="toggle-1"></label>
+    </div>
+  </div>
+
+  <!-- Default Inputs -->
+  <div class="card soft">
+    <h3>Default Inputs</h3>
+    <div class="default-inputs">
+      <input type="text">
+      <input type="number">
+      <input type="password">
+      <input type="date">
+      <input type="time">
+      <input type="search">
+    </div>
+  </div>
+
+  <!-- Basic Inputs -->
+  <div class="card soft">
+    <h3>Basic Inputs</h3>
+
+    <div class="form-control">
+      <label class="form-label">Full Name</label>
+      <input type="text" class="form-input">
+    </div>
+
+    <div class="form-control">
+      <label class="form-label">Email</label>
+      <input type="email" class="form-input">
+    </div>
+
+    <button class="form-button">Submit</button>
+  </div>
+
+  <!-- Form Input -->
+  <div class="card soft">
+    <h3>Form Input</h3>
+
+    <div class="form-control">
+      <input type="text" class="form-input" placeholder="Text">
+    </div>
+
+    <div class="form-control">
+      <input type="number" class="form-input" placeholder="Number">
+    </div>
+
+    <div class="form-control">
+      <input type="password" class="form-input" placeholder="Password">
+    </div>
+
+    <div class="form-control">
+      <input type="search" class="form-input" placeholder="Search">
+    </div>
+  </div>
+
+  <!-- Form Label -->
+  <div class="card soft">
+    <h3>Form Label</h3>
+
+    <div class="form-control">
+      <label class="form-label">Example</label>
+      <input type="text" class="form-input" placeholder="Text">
+    </div>
+
+    <div class="form-control">
+      <label class="form-label">Example</label>
+      <input type="number" class="form-input" placeholder="Number">
+    </div>
+
+    <div class="form-control">
+      <label class="form-label">Example</label>
+      <input type="password" class="form-input" placeholder="Password">
+    </div>
+
+    <div class="form-control">
+      <label class="form-label">Example</label>
+      <input type="search" class="form-input" placeholder="Search">
+    </div>
+  </div>
+
+  <!-- Form Control -->
+  <div class="card soft">
+    <h3>Form Control</h3>
+
+    <div class="form-control">
+      <label class="form-label">Example</label>
+      <input type="text" class="form-input">
+    </div>
+
+    <div class="form-control">
+      <label class="form-label">Example</label>
+      <input type="number" class="form-input">
+    </div>
+
+    <div class="form-control">
+      <label class="form-label">Example</label>
+      <input type="password" class="form-input">
+    </div>
+
+    <div class="form-control">
+      <label class="form-label">Example</label>
+      <input type="search" class="form-input">
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<script>
+$("#navigation-examples a").on("click", function(e){
+  e.preventDefault();
+  $(this).closest("li")
+         .addClass("active")
+         .siblings()
+         .removeClass("active");
+});
+
+
+</script>
+
+
+
+</body>
+</html>
+

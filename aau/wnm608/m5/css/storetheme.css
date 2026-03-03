@@ -1,0 +1,903 @@
+/* =========================================
+   NEON KACTUS DESIGN SYSTEM
+========================================= */
+
+
+/* -------------------------
+   BRAND VARIABLES
+------------------------- */
+
+:root {
+  --ivory: #F2EEE8;
+  --stone: #E6E0D7;
+  --sage: #8FA090;
+  --blue: #5A7A8C;
+  --charcoal: #1E1E1E;
+  --gold: #D4AF37;
+
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.04);
+  --shadow-hard: 0 28px 70px rgba(0,0,0,0.12);
+}
+
+/* -------------------------
+   GLOBAL
+------------------------- */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--ivory);
+  color: var(--charcoal);
+  line-height: 1.7;
+  border-top: 15px solid var(--gold);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* -------------------------
+   TYPOGRAPHY
+------------------------- */
+
+h1 {
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  font-size: 2.5rem; /* mobile default */
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: 2rem;
+  position: relative;
+  font-size: 1.5rem; /* mobile default */
+}
+
+h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+/* Gold underline accent */
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  margin-top: 12px;
+}
+
+p {
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+}
+
+.spec {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: -0.75rem;
+  margin-bottom: 2rem;
+}
+
+.accent-gold {
+  color: var(--gold);
+}
+
+/* -------------------------
+   DESKTOP SCALING
+------------------------- */
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* -------------------------
+   SECTION SPACING
+------------------------- */
+
+.sg-section,
+.container {
+  margin: 8rem auto;
+}
+
+/* -------------------------
+   DIVIDER
+------------------------- */
+
+.divider {
+  height: 1px;
+  background: var(--stone);
+  margin: 5rem 0;
+}
+
+/* -------------------------
+   CARD SYSTEM
+------------------------- */
+
+/* Default */
+.card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--stone);
+  box-shadow: none;
+  margin-bottom: 2rem;
+}
+
+/* Soft */
+.card.soft {
+  background: var(--stone);
+  border: none;
+  box-shadow: none;
+}
+
+/* Hard */
+.card.hard {
+  background: #ffffff;
+  border: none;
+  box-shadow: var(--shadow-hard);
+}
+
+/* Dark */
+.card.dark {
+  background: var(--charcoal);
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+}
+
+/* -------------------------
+   ICONOGRAPHY
+------------------------- */
+
+.icon-row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+/* -------------------------
+   COLOR SYSTEM
+------------------------- */
+
+.color-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.color-swatch {
+  flex: 1;
+  padding: 3rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.ivory { background: var(--ivory); }
+.stone { background: var(--stone); }
+.sage { background: var(--sage); color: white; }
+.blue { background: var(--blue); color: white; }
+.charcoal { background: var(--charcoal); color: white; }
+.gold { background: var(--gold); color: white; }
+
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: 100%;
+  padding: 0 1.5rem;   /* horizontal breathing room */
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+
+
+/* -------------------------
+   NAVIGATION
+------------------------- */
+
+nav {
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-evenly;   /* clean spacing across */
+  align-items: center;
+}
+
+.nav li {
+  flex: 1;
+  text-align: center;              /* keeps text centered in each space */
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--charcoal);
+  font-weight: 600;
+  display: block;
+  padding: 1rem 0;
+  transition: 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--gold);
+}
+
+/* Active State */
+.nav li.active a {
+  color: var(--gold);
+}
+
+
+
+/* -------------------------
+   TABLES
+------------------------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--stone);
+}
+
+td {
+  padding: 1rem 0;
+}
+
+
+
+
+/* -------------------------
+   SPACING DEMO UTILITIES
+------------------------- */
+
+.space-demo {
+  height: 8px;
+  background: var(--stone);
+  margin-bottom: 1rem;
+}
+
+.space-demo.medium {
+  height: 16px;
+}
+
+.space-demo.large {
+  height: 32px;
+}
+
+
+/* =========================
+   NAVIGATION EXAMPLES
+========================= */
+
+/* Base layout */
+.nav-flex ul,
+.nav-stretch ul,
+.nav-pills ul,
+.nav-crumbs ul,
+.nav-material ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* FLEX */
+.nav-flex ul {
+  justify-content: flex-start;
+}
+
+/* STRETCH */
+.nav-stretch ul {
+  justify-content: space-between;
+}
+
+.nav-stretch li {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-stretch a.active {
+  background: var(--blue);
+  color: white;
+  padding: 0.75rem 0;
+  border-radius: var(--radius-sm);
+}
+
+/* PILLS */
+.nav-pills a {
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+}
+
+.nav-pills a.active {
+  background: var(--blue);
+  color: white;
+}
+
+/* CRUMBS */
+.nav-crumbs ul {
+  gap: 0.5rem;
+}
+
+.nav-crumbs a {
+  text-decoration: none;
+  color: var(--charcoal);
+}
+
+.nav-crumbs a.active {
+  color: var(--gold);
+}
+
+/* MATERIAL */
+.nav-material ul {
+  justify-content: space-between;
+}
+
+.nav-material li {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-material a {
+  display: block;
+  padding: 0.75rem 0;
+  position: relative;
+}
+
+.nav-material a.active {
+  border-bottom: 3px solid var(--blue);
+}
+
+.nav-material a.active {
+  border-bottom: 3px solid var(--blue);
+}
+
+/* =========================
+   TABLE SYSTEM
+========================= */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: white;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Base header style */
+.table thead {
+  background: var(--stone);
+  font-weight: 700;
+}
+
+.table thead th {
+  border-bottom: 2px solid var(--gold);
+}
+
+/* 1. Border Version */
+.table-border th,
+.table-border td {
+ border-bottom: 1px solid var(--charcoal);
+}
+
+/* 2. Lined All */
+.table-all th,
+.table-all td {
+  border: 1px solid var(--stone);
+}
+
+.table-all tbody tr:nth-child(even) {
+  background: rgba(0,0,0,0.03);
+}
+
+/* 3. Combination */
+.table-combo th,
+.table-combo td {
+  border: 1px solid var(--stone);
+}
+
+.table-combo tbody tr:nth-child(even) {
+  background: var(--stone);
+}
+
+
+/* =========================
+   PRODUCT FIGURES
+========================= */
+
+.figure {
+  margin: 0;
+}
+
+.figure img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+.figure figcaption {
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+/* =========================
+   PRODUCT OVERLAY
+========================= */
+
+.product-overlay {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.product-overlay img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.product-overlay figcaption {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.product-overlay:hover figcaption {
+  opacity: 1;
+}
+
+.product-overlay:hover img {
+  transform: scale(1.1);
+}
+
+.overlay-box {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  font-weight: 600;
+}
+
+
+
+/* =========================
+   GRID SYSTEM
+========================= */
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr; /* mobile default */
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* =========================
+   PRODUCT IMAGE FIX
+========================= */
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  height: 300px;        /* forces equal height */
+  object-fit: cover;    /* crops instead of stretching */
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+
+//* -------------------------
+   FORMS
+------------------------- */
+
+.form-control {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-control:not(:last-child) {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 0;
+  border: none;
+  border-bottom: 1px solid var(--stone);
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--blue);
+}
+
+
+
+/* =========================
+   MAIN BUTTONS
+========================= */
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-primary,
+.btn-outline {
+  padding: 0.85rem 2rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Primary */
+.btn-primary {
+  background: var(--blue);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--charcoal);
+  transform: translateY(-2px);
+}
+
+/* Outline */
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+}
+
+.btn-outline:hover {
+  background: var(--blue);
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .form-actions {
+    flex-direction: row;
+  }
+}  
+
+
+/* -------- FORM BUTTON SCOPED -------- */
+
+.form-button {
+  display: inline-flex;              /* FIX */
+  align-items: center;               /* FIX */
+  justify-content: center;           /* FIX */
+
+  background: var(--blue);
+  color: #fff;
+
+  padding: 0.85rem 1.75rem;
+  border: none;
+  border-radius: 999px;
+
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;                    /* FIX */
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.form-button:hover {
+  background: var(--charcoal);
+}
+
+#forms .form-button {
+  margin-top: 2rem;
+}
+
+
+/* =========================
+   HOTDOG SYSTEM
+========================= */
+
+.hotdog {
+  width: 100%;
+  padding: 0.85rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--stone);
+  background: white;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.hotdog:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 4px rgba(90,122,140,0.15);
+}
+
+/* Dark Filled */
+.hotdog-dark {
+  background: var(--charcoal);
+  color: white;
+  border: none;
+}
+
+.hotdog-dark::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+/* Inset Style */
+.hotdog-wrap {
+  background: var(--charcoal);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+}
+
+.hotdog-inset {
+  background: white;
+  border: none;
+}
+
+/* Icon Versions */
+.hotdog-icon {
+  display: flex;
+  align-items: center;
+  background: var(--stone);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.hotdog-icon input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.hotdog-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+/* -------- SELECT -------- */
+
+.form-select select {
+  width: 100%;
+  padding: 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--stone);
+  background: white;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+.form-select select:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+
+/* -------- HIDDEN UTILITY -------- */
+
+.hidden {
+  display: none;
+}
+
+
+/* -------- HEART CHECKBOX -------- */
+
+.favorite label {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.favorite input:checked + label {
+  color: red;
+}
+
+
+/* =========================
+   CHECKBOX SPACING
+========================= */
+
+#forms .card label,
+#forms .favorite,
+#forms .toggle {
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+/* -------- TOGGLE SWITCH -------- */
+
+.toggle {
+  position: relative;
+  width: 50px;
+  height: 26px;
+}
+
+.toggle label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  border-radius: 999px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.toggle label::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s ease;
+}
+
+.toggle input:checked + label {
+  background: var(--blue);
+}
+
+.toggle input:checked + label::after {
+  transform: translateX(24px);
+}
+
+
+
+/* =========================
+   DEFAULT INPUTS
+========================= */
+
+.default-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 1200px;
+}
+
+.default-inputs input {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid var(--stone);
+  background: var(--ivory);
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* =========================
+   FORCE ALL FORM INPUTS FULL WIDTH
+========================= */
+
+#forms .card {
+  width: 100%;
+}
+
+#forms .form-control {
+  width: 100%;
+}
+
+#forms .form-input {
+  display: block;
+  width: 100%;
+}
+
+#forms .default-inputs input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+

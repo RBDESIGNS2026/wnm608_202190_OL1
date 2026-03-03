@@ -1,0 +1,77 @@
+/* =========================
+   CSS RESET
+========================= */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BASE TYPOGRAPHY
+========================= */
+:root {
+    --font-primary: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+/* =========================
+   LAYOUT CONTAINER
+========================= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* =========================
+   FLEX UTILITIES
+========================= */
+
+/* Display */
+.display-flex {
+    display: flex;
+}
+
+.display-inline-flex {
+    display: inline-flex;
+}
+
+/* Direction */
+.flex-column {
+    flex-direction: column;
+}
+
+/* Flex Behavior */
+.flex-stretch {
+    flex: 1 1 auto;
+}
+
+/* Alignment */
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+/* =========================
+   BLOCK UTILITIES
+========================= */
+.display-block {
+    display: block;
+}
+
+.display-inline-block {
+    display: inline-block;
+}

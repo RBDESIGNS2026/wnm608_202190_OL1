@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Kactus - Checkout</title>
+
+<link rel="stylesheet" href="../lib/css/styleguide.css">
+<link rel="stylesheet" href="../lib/css/gridsystem.css">
+<link rel="stylesheet" href="../css/storetheme.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="top-bar container">
+  <div class="display-flex flex-justify-between flex-align-center">
+    <a href="landing.html" class="site-title">NEON KACTUS®</a>
+    <p class="checkout-label">Secure Checkout</p>
+  </div>
+</header>
+
+<!-- TITLE -->
+<section class="sg-section container" style="margin-bottom: 2rem;">
+  <p class="label-accent" style="font-style: italic;">checkout</p>
+  <h1>CHECKOUT</h1>
+</section>
+
+<!-- CHECKOUT CONTENT -->
+<section class="container" style="padding-bottom: 4rem;">
+  <div class="grid gap">
+    <!-- FORM SIDE -->
+    <div class="col-12 col-md-6">
+      <!-- Shipping Information -->
+      <div class="card">
+        <h3>Shipping Information</h3>
+        <div class="form-row">
+          <div class="grid gap">
+            <div class="col-6">
+              <label>First Name</label>
+              <input type="text" class="input-hotdog">
+            </div>
+            <div class="col-6">
+              <label>Last Name</label>
+              <input type="text" class="input-hotdog">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Address</label>
+          <input type="text" class="input-hotdog">
+        </div>
+        <div class="form-row">
+          <div class="grid gap">
+            <div class="col-4">
+              <label>City</label>
+              <input type="text" class="input-hotdog">
+            </div>
+            <div class="col-4">
+              <label>State</label>
+              <input type="text" class="input-hotdog">
+            </div>
+            <div class="col-4">
+              <label>Zip</label>
+              <input type="text" class="input-hotdog">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Email</label>
+          <input type="email" class="input-hotdog">
+        </div>
+      </div>
+
+      <!-- Payment -->
+      <div class="card">
+        <h3>Payment</h3>
+        <div class="form-row">
+          <label>Card Number</label>
+          <input type="text" placeholder="•••• •••• •••• ••••" class="input-hotdog">
+        </div>
+        <div class="form-row">
+          <div class="grid gap">
+            <div class="col-6">
+              <label>Expiry</label>
+              <input type="text" placeholder="MM / YY" class="input-hotdog">
+            </div>
+            <div class="col-6">
+              <label>CVC</label>
+              <input type="text" placeholder="•••" class="input-hotdog">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ORDER SUMMARY -->
+    <div class="col-12 col-md-6">
+      <div class="card order-summary">
+        <h3>Order Summary</h3>
+
+        <!-- Items -->
+        <div class="order-items">
+          <div class="order-item">
+            <img src="../images/fiddle-leaf-fig.jpg" alt="Fiddle Leaf Fig" class="order-item-img">
+            <div class="order-item-info">
+              <p class="order-item-name">Fiddle Leaf Fig</p>
+              <p class="order-item-qty">Qty: 1</p>
+            </div>
+            <p class="order-item-price">$89</p>
+          </div>
+          <div class="order-item">
+            <img src="../images/monstera.jpg" alt="Monstera Deliciosa" class="order-item-img">
+            <div class="order-item-info">
+              <p class="order-item-name">Monstera Deliciosa</p>
+              <p class="order-item-qty">Qty: 1</p>
+            </div>
+            <p class="order-item-price">$65</p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Totals -->
+        <div class="order-totals">
+          <div class="order-row">
+            <span class="order-label">Subtotal</span>
+            <span class="order-value">$154.00</span>
+          </div>
+          <div class="order-row">
+            <span class="order-label">Shipping</span>
+            <span class="order-value">$12.00</span>
+          </div>
+          <div class="order-row">
+            <span class="order-label">Tax</span>
+            <span class="order-value">$13.86</span>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="order-total-row">
+          <span>Total</span>
+          <span>$179.86</span>
+        </div>
+
+        <!-- Promo -->
+        <div class="promo-row">
+          <input type="text" placeholder="Promo Code" class="input-hotdog promo-input">
+          <button class="btn-outline promo-btn">Apply</button>
+        </div>
+
+        <button class="btn-primary btn-full">Place Order</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer container">
+  <div class="footer-bottom">
+    <p>© 2026 Neon Kactus</p>
+    <a href="../index.html" class="back-link">← Back to Style Guide</a>
+  </div>
+</footer>
+
+</body>
+</html>

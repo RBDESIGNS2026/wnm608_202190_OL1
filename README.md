@@ -36,7 +36,11 @@ MODULE 5.1  - FORMS
 
 Assignment - https://neonkactus.shop/aau/wnm608/m5/styleguide/index.html
 
+_________________________________________________________________________________
 
+MODULE 6.1  - MIDTERM
+
+Assignment - https://neonkactus.shop/aau/wnm608/m6/index.html
 
 
 

@@ -42,6 +42,18 @@ MODULE 6.1  - MIDTERM
 
 Assignment - https://neonkactus.shop/aau/wnm608/m6/index.html
 
+_________________________________________________________________________________
+
+MODULE 7.1  - PHP 
+
+Assignment - https://neonkactus.shop/aau/wnm608/m7/php/index.php
+
+_________________________________________________________________________________
+
+MODULE 8.1  - User Editor Form
+
+Assignment - https://neonkactus.shop/aau/wnm608/m8/php/index.php
+
 
 
 

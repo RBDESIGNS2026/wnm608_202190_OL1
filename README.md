@@ -52,7 +52,7 @@ ________________________________________________________________________________
 
 MODULE 8.1  - User Editor Form
 
-Assignment - https://neonkactus.shop/aau/wnm608/m8/php/index.php
+Assignment - https://neonkactus.shop/aau/wnm608/m8/php/admin/users.php
 
 
 

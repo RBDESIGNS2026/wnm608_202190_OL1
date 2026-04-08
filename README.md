@@ -54,6 +54,11 @@ MODULE 8.1  - User Editor Form
 
 Assignment - https://neonkactus.shop/aau/wnm608/m8/php/admin/users.php
 
+_________________________________________________________________________________
+
+MODULE 9.1  - Products Table
+
+Assignment - https://neonkactus.shop/aau/wnm608/m9/php/index.php
 
 
 

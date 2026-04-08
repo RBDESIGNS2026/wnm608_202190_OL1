@@ -58,7 +58,7 @@ ________________________________________________________________________________
 
 MODULE 9.1  - Products Table
 
-Assignment -https://neonkactus.shop/aau/wnm608/m9/php/product_list.php
+Assignment - https://neonkactus.shop/aau/wnm608/m9/php/index.php
 
 
 

@@ -60,6 +60,10 @@ MODULE 9.1  - Products Table
 
 Assignment - https://neonkactus.shop/aau/wnm608/m9/php/index.php
 
+_________________________________________________________________________________
 
+MODULE 10.1  - Products List & 
+
+Assignment - https://neonkactus.shop/aau/wnm608/m10/php/product_list.php
 
 

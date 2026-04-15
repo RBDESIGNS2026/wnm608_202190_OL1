@@ -62,7 +62,7 @@ Assignment - https://neonkactus.shop/aau/wnm608/m9/php/index.php
 
 _________________________________________________________________________________
 
-MODULE 10.1  - Products List & 
+MODULE 10.1  - Item Templates
 
 Assignment - https://neonkactus.shop/aau/wnm608/m10/php/product_list.php
 

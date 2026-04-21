@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "type": "student",
+    "classes": ["Math 101", "English 201"]
+  },
+  {
+    "name": "Bob Smith",
+    "email": "bob@example.com",
+    "type": "instructor",
+    "classes": ["Physics 301", "Chemistry 101"]
+  },
+  {
+    "name": "Carol Davis",
+    "email": "carol@example.com",
+    "type": "admin",
+    "classes": []
+  }
+]

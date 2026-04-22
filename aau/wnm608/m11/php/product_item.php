@@ -1,12 +1,9 @@
+<?php
 include_once "functions.php";
 
-<?php
 // ============================================
 // PRODUCT DETAIL PAGE - product_item.php
-// Demonstrates: $_GET, arrays, conditional output, dynamic content, sessions
 // ============================================
-
-session_start();
 
 // Include shared product data
 include "parts/products_data.php";
@@ -47,12 +44,15 @@ $page_title = $product ? "Neon Kactus - " . $product['name'] : "Neon Kactus - Pr
   <h1><?= strtoupper($product['name']) ?></h1>
 
   <div class="grid gap" style="margin-top: 3rem;">
+    
+    <!-- IMAGE -->
     <div class="col-12 col-md-6">
       <div class="card hard" style="padding: 0; overflow: hidden;">
         <img src="<?= $product['image'] ?>" alt="<?= $product['name'] ?>" style="width: 100%; height: 500px; object-fit: cover;">
       </div>
     </div>
 
+    <!-- DETAILS -->
     <div class="col-12 col-md-6 product-details">
       <p class="label-accent">Premium Selection</p>
       <h2 class="product-title"><?= $product['name'] ?></h2>
@@ -84,8 +84,32 @@ $page_title = $product ? "Neon Kactus - " . $product['name'] : "Neon Kactus - Pr
         <span class="addon-price">+ Ceramic Planter $45</span>
       </div>
 
-      <!-- CTA -->
-      <a href="cart_add.php?id=<?= $id ?>&redirect=checkout.php" class="btn-primary btn-full" style="text-decoration: none; display: block; text-align: center;">Add to Cart</a>
+      <!-- ✅ ADD TO CART FORM (FIXED FOR MODULE 11) -->
+      <form method="post" action="cart_add.php" style="margin-top: 2rem;">
+
+        <input type="hidden" name="id" value="<?= $id ?>">
+
+        <!-- Quantity -->
+        <label class="spec-label">Quantity</label>
+        <select name="amount" class="form-select" style="margin-bottom: 1rem;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+
+        <!-- Color -->
+        <label class="spec-label">Pot Color</label>
+        <select name="color" class="form-select" style="margin-bottom: 1.5rem;">
+          <option value="Ceramic">Ceramic</option>
+          <option value="Black">Black</option>
+        </select>
+
+        <!-- Submit -->
+        <button type="submit" class="btn-primary btn-full">
+          Add to Cart
+        </button>
+
+      </form>
 
       <p style="margin-top: 1rem; font-size: 0.85rem; color: #777;">
         You are viewing item #<?= $id ?>

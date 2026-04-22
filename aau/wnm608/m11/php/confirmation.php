@@ -1,40 +1,30 @@
 <?php
-session_start();
+require_once("functions.php");
 
-// clear cart after order
-unset($_SESSION['cart']);
+if($_SERVER['REQUEST_METHOD'] === 'POST') {
+    resetCart();
+}
 
-$page_title = "Order Confirmation";
+$id = $_GET['id'] ?? null;
+$cart = getCart();
+
+$item = null;
+
+foreach($cart as $i) {
+    if($i['id'] == $id) {
+        $item = $i;
+        break;
+    }
+}
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title><?= $page_title ?></title>
-  <?php include "parts/meta.php"; ?>
-</head>
+<h2>Added to Cart</h2>
 
-<body>
+<?php if($item): ?>
+<p>
+There are now <?= $item['amount'] ?> of product <?= $item['id'] ?> in your cart.
+</p>
+<?php endif; ?>
 
-<?php include "parts/navbar.php"; ?>
-
-<section class="container" style="padding: 4rem 0; text-align: center;">
-  <h1>Thank You for Your Order!</h1>
-
-  <p style="margin-top: 1rem;">
-    Your order has been placed successfully.
-  </p>
-
-  <p style="margin-bottom: 2rem;">
-    We’re getting everything ready for you.
-  </p>
-
-  <a href="product_list.php">
-    <button class="btn-primary">Continue Shopping</button>
-  </a>
-</section>
-
-<?php include "parts/footer.php"; ?>
-
-</body>
-</html>
+<a href="product_list.php">Continue Shopping</a>
+<a href="checkout.php">Go to Checkout</a>

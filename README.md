@@ -70,7 +70,7 @@ ________________________________________________________________________________
 
 MODULE 11.1  - Cart 
 
-Assignment -https://neonkactus.shop/aau/wnm608/m11/php/checkout.php
+Assignment https://neonkactus.shop/aau/wnm608/m11/php/product_list.php
 
 
 

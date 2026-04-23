@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Kactus Style Guide</title>
+
+<link rel="stylesheet" href="lib/css/styleguide.css">
+<link rel="stylesheet" href="lib/css/gridsystem.css">
+<link rel="stylesheet" href="css/storetheme.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+</style>
+
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container display-flex">
+    <div class="flex-none">
+      <h1 class="title">NEON KACTUS®</h1>
+      <p>Elevated Botanical Design System</p>
+    </div>
+  </div>
+</header>
+
+<!-- TABLE OF CONTENTS -->
+<div class="container" id="tableofcontents">
+  <div class="card soft">
+    <h2>Table of Contents</h2>
+    <ul>
+      <li><a href="#iconography">Iconography</a></li>
+      <li><a href="#colors">Color System</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#buttons">Buttons</a></li>
+      <li><a href="#cards">Cards</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#navigation">Navigation</a></li>
+      <li><a href="#gridsystem">Grid System</a></li>
+      <li><a href="#flexsystem">Flex System</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#wireframes">Wireframes</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ICONOGRAPHY -->
+<section class="sg-section container" id="iconography">
+  <h2>Iconography</h2>
+  <div class="icon-row">
+    <div class="icon">♡</div>
+    <div class="icon">🛒</div>
+    <div class="icon">→</div>
+    <div class="icon">☰</div>
+  </div>
+</section>
+
+<!-- COLOR SYSTEM -->
+<section class="sg-section container" id="colors">
+  <h2>Color System</h2>
+  <div class="color-row">
+    <div class="color-swatch ivory">
+      <span class="color-name">Warm Ivory</span>
+      <span class="color-hex">#F2EEE8</span>
+    </div>
+    <div class="color-swatch stone">
+      <span class="color-name">Soft Stone</span>
+      <span class="color-hex">#E6E0D7</span>
+    </div>
+    <div class="color-swatch sage">
+      <span class="color-name">Muted Sage</span>
+      <span class="color-hex">#8FA090</span>
+    </div>
+    <div class="color-swatch blue">
+      <span class="color-name">Desert Blue</span>
+      <span class="color-hex">#5A7A8C</span>
+    </div>
+    <div class="color-swatch charcoal">
+      <span class="color-name">Deep Charcoal</span>
+      <span class="color-hex">#1E1E1E</span>
+    </div>
+    <div class="color-swatch gold">
+      <span class="color-name">Champagne Gold</span>
+      <span class="color-hex">#D4AF37</span>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section class="sg-section container" id="typography">
+  <h2>Typography</h2>
+
+  <div class="type-example">
+    <p class="label-accent">Display / Headlines</p>
+    <h1 class="display">NEON DESERT</h1>
+    <p class="spec">System Sans-Serif Black · 96px / 120px · -0.03em tracking</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="type-example">
+    <p class="label-accent">Subheadings</p>
+    <h2 class="heading">Modern Plants for Modern Spaces</h2>
+    <p class="spec">System Sans-Serif Extra Bold · 42px / 48px · -0.01em tracking</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="type-example">
+    <p class="label-accent">Body Text</p>
+    <p class="body-text">
+      Our curated collection brings together premium botanical specimens and contemporary planters
+      designed for the modern interior. Each piece is selected for its quality, aesthetic appeal,
+      and ability to thrive in home environments.
+    </p>
+    <p class="spec">System Sans-Serif Regular · 20px / 34px · 0em tracking</p>
+  </div>
+</section>
+
+<!-- BUTTONS -->
+<section class="sg-section container" id="buttons">
+  <h2>Buttons</h2>
+  <div class="button-row">
+    <button class="btn-primary">Primary</button>
+    <button class="btn-outline">Secondary</button>
+    <button class="btn-primary" disabled>Disabled</button>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section class="sg-section container" id="cards">
+  <h2>Cards</h2>
+  <div class="grid gap">
+    <div class="col-3"><div class="card">Default</div></div>
+    <div class="col-3"><div class="card soft">Soft</div></div>
+    <div class="col-3"><div class="card hard">Hard</div></div>
+    <div class="col-3"><div class="card dark">Dark</div></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="sg-section container" id="products">
+  <h2>Products</h2>
+  
+  <div class="grid gap">
+    <!-- Product 1 -->
+    <div class="col-12 col-md-4">
+      <div class="product-card">
+        <div class="product-image-wrapper">
+          <img src="images/fiddle-leaf-fig.jpg" alt="Fiddle Leaf Fig">
+          <button class="favorite-btn">♡</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Fiddle Leaf Fig</h3>
+          <p class="product-price">$89</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-12 col-md-4">
+      <div class="product-card">
+        <div class="product-image-wrapper">
+          <img src="images/monstera.jpg" alt="Monstera Deliciosa">
+          <button class="favorite-btn">♡</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Monstera Deliciosa</h3>
+          <p class="product-price">$65</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-12 col-md-4">
+      <div class="product-card">
+        <div class="product-image-wrapper">
+          <img src="images/snake-plant.jpg" alt="Snake Plant">
+          <button class="favorite-btn">♡</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Snake Plant</h3>
+          <p class="product-price">$45</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-12 col-md-4">
+      <div class="product-card">
+        <div class="product-image-wrapper">
+          <img src="images/pothos.jpg" alt="Golden Pothos">
+          <button class="favorite-btn">♡</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Golden Pothos</h3>
+          <p class="product-price">$32</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="col-12 col-md-4">
+      <div class="product-card">
+        <div class="product-image-wrapper">
+          <img src="images/fiddle-leaf-fig.jpg" alt="Fiddle Leaf Fig (Large)">
+          <button class="favorite-btn">♡</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Fiddle Leaf Fig (Large)</h3>
+          <p class="product-price">$129</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-12 col-md-4">
+      <div class="product-card">
+        <div class="product-image-wrapper">
+          <img src="images/monstera.jpg" alt="Monstera (Mini)">
+          <button class="favorite-btn">♡</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Monstera (Mini)</h3>
+          <p class="product-price">$38</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NAVIGATION -->
+<section class="sg-section container" id="navigation">
+  <h2>Navigation</h2>
+
+  <!-- Base Nav -->
+  <div class="card soft">
+    <h3>Base Nav</h3>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Care Guide</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Pills Nav -->
+  <div class="card soft">
+    <h3>Pills Nav</h3>
+    <nav class="nav-pills">
+      <a href="#" class="pill active">Indoor</a>
+      <a href="#" class="pill">Outdoor</a>
+      <a href="#" class="pill">Accessories</a>
+    </nav>
+  </div>
+
+  <!-- Breadcrumbs -->
+  <div class="card soft">
+    <h3>Breadcrumbs</h3>
+    <nav class="breadcrumbs">
+      <a href="#">Home</a>
+      <span>/</span>
+      <a href="#" class="accent-gold">Shop</a>
+      <span>/</span>
+      <a href="#">Plants</a>
+    </nav>
+  </div>
+</section>
+
+<!-- GRID SYSTEM -->
+<section class="sg-section container" id="gridsystem">
+  <h2>Grid System</h2>
+
+  <div class="grid gap">
+    <div class="col-6 demo-box">col-6</div>
+    <div class="col-6 demo-box">col-6</div>
+
+    <div class="col-4 demo-box">col-4</div>
+    <div class="col-4 demo-box">col-4</div>
+    <div class="col-4 demo-box">col-4</div>
+
+    <div class="col-3 demo-box">col-3</div>
+    <div class="col-3 demo-box">col-3</div>
+    <div class="col-3 demo-box">col-3</div>
+    <div class="col-3 demo-box">col-3</div>
+  </div>
+</section>
+
+<!-- FLEX SYSTEM -->
+<section class="sg-section container" id="flexsystem">
+  <h2>Flex System</h2>
+
+  <div class="display-flex gap">
+    <div class="flex-stretch card">Flex 1</div>
+    <div class="flex-stretch card">Flex 2</div>
+    <div class="flex-stretch card">Flex 3</div>
+  </div>
+</section>
+
+<!-- TABLES -->
+<section class="sg-section container" id="tables">
+  <h2>Tables</h2>
+
+  <div class="card soft">
+    <h3>Striped Lined Border</h3>
+    <table class="table-striped">
+      <thead>
+        <tr>
+          <th>Plant</th>
+          <th>Light</th>
+          <th>Water</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fiddle Leaf Fig</td>
+          <td>Bright Indirect</td>
+          <td>Weekly</td>
+          <td>$89</td>
+        </tr>
+        <tr>
+          <td>Monstera</td>
+          <td>Medium Light</td>
+          <td>Bi-weekly</td>
+          <td>$65</td>
+        </tr>
+        <tr>
+          <td>Snake Plant</td>
+          <td>Low to Bright</td>
+          <td>Monthly</td>
+          <td>$45</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- FORMS -->
+<section class="sg-section container" id="forms">
+  <h2>Forms</h2>
+
+  <!-- Form Buttons -->
+  <div class="card soft">
+    <h3>Form Buttons</h3>
+    <div class="button-row">
+      <button class="btn-pill">Button</button>
+      <button class="btn-pill">Input</button>
+      <a href="#" class="btn-pill">Anchor</a>
+    </div>
+  </div>
+
+  <!-- Search Inputs -->
+  <div class="card soft">
+    <h3>Search Inputs (Hotdog)</h3>
+    <div class="form-group">
+      <input type="search" placeholder="Search" class="input-hotdog">
+    </div>
+    <div class="form-group">
+      <input type="search" placeholder="Search" class="input-hotdog dark">
+    </div>
+    <div class="form-group dark-bg">
+      <input type="search" placeholder="Search" class="input-hotdog">
+    </div>
+  </div>
+
+  <!-- Basic Inputs -->
+  <div class="card soft">
+    <h3>Basic Inputs</h3>
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" class="input-underline">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" class="input-underline">
+    </div>
+    <div class="form-group">
+      <label>Message</label>
+      <input type="text" class="input-underline">
+    </div>
+    <button class="btn-pill">Submit</button>
+  </div>
+
+  <!-- Checkboxes, Labels & Favorite -->
+  <div class="card soft">
+    <h3>Checkboxes, Labels &amp; Favorite</h3>
+    <div class="checkbox-group">
+      <label class="checkbox-label">
+        <input type="checkbox">
+        <span>Label</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" checked>
+        <span>Checked</span>
+      </label>
+    </div>
+    <div style="margin-top: 1.5rem;">
+      <p class="label-accent">Favorite Toggle</p>
+      <button class="favorite-btn-interactive" onclick="this.classList.toggle('active')" aria-label="Toggle favorite">♡</button>
+    </div>
+  </div>
+
+  <!-- Select -->
+  <div class="card soft">
+    <h3>Select</h3>
+    <select class="select-box">
+      <option>Indoor Plants</option>
+      <option>Outdoor Plants</option>
+      <option>Planters</option>
+    </select>
+  </div>
+</section>
+
+<!-- WIREFRAMES -->
+<section class="sg-section container" id="wireframes">
+  <h2>Wireframes</h2>
+  <div class="grid gap">
+    <div class="col-12 col-md-3">
+      <a href="wireframes/landing.html" class="wireframe-card">
+        <div class="wireframe-image-wrapper">
+          <img src="images/hero-plants.jpg" alt="Landing wireframe preview">
+        </div>
+        <p class="wireframe-label">Landing</p>
+      </a>
+    </div>
+    <div class="col-12 col-md-3">
+      <a href="wireframes/shop.html" class="wireframe-card">
+        <div class="wireframe-image-wrapper">
+          <img src="images/monstera.jpg" alt="Shop wireframe preview">
+        </div>
+        <p class="wireframe-label">Shop Grid</p>
+      </a>
+    </div>
+    <div class="col-12 col-md-3">
+      <a href="wireframes/product.html" class="wireframe-card">
+        <div class="wireframe-image-wrapper">
+          <img src="images/fiddle-leaf-fig.jpg" alt="Product wireframe preview">
+        </div>
+        <p class="wireframe-label">Product</p>
+      </a>
+    </div>
+    <div class="col-12 col-md-3">
+      <a href="wireframes/checkout.html" class="wireframe-card">
+        <div class="wireframe-image-wrapper">
+          <img src="images/snake-plant.jpg" alt="Checkout wireframe preview">
+        </div>
+        <p class="wireframe-label">Checkout</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer container">
+  <p>© 2026 Neon Kactus. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -80,6 +80,11 @@ MODULE 12.1  - Search
 https://neonkactus.shop/aau/wnm608/m12/php/product_list_dynamic.php
 
 
+_________________________________________________________________________________
+
+MODULE 13.1  - Product Admin Page
+
+https://neonkactus.shop/aau/wnm608/m12/php/product_list_dynamic.php
 
 
 

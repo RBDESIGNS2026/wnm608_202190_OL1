@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Kactus - Home</title>
+
+<link rel="stylesheet" href="../lib/css/styleguide.css">
+<link rel="stylesheet" href="../lib/css/gridsystem.css">
+<link rel="stylesheet" href="../css/storetheme.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="top-bar container">
+  <div class="display-flex flex-justify-between flex-align-center">
+    <a href="landing.html" class="site-title">NEON KACTUS®</a>
+    <nav class="top-nav">
+      <a href="landing.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="product.html">Product</a>
+      <a href="checkout.html">Cart (0)</a>
+      <a href="../index.html">Style Guide</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero container">
+  <div class="grid gap">
+    <div class="col-12 col-md-6">
+      <p class="label-accent" style="font-style: italic;">where desert meets design</p>
+      <h1 class="display">Elevated<br>Botanical<br>Design</h1>
+      <p class="body-text">
+        Discover our collection of premium plants and modern planters, thoughtfully curated for contemporary living.
+      </p>
+      <div class="button-row">
+        <a href="shop.html" class="btn-pill">Shop Plants</a>
+        <a href="#categories" class="btn-outline">Browse</a>
+      </div>
+      <div class="gold-bar"></div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="card hard" style="padding: 0; overflow: hidden;">
+        <img src="../images/hero-plants.jpg" alt="Premium plants and planters" style="width: 100%; height: 400px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP BY CATEGORY -->
+<section class="sg-section container" id="categories">
+  <p class="label-accent" style="font-style: italic;">explore</p>
+  <h2>Shop by Category</h2>
+  
+  <div class="grid gap">
+    <div class="col-12 col-md-4">
+      <a href="shop.html" class="category-card">
+        <img src="../images/monstera.jpg" alt="Indoor Plants">
+        <div class="category-overlay">
+          <h3>Indoor Plants</h3>
+          <p>24 products</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-12 col-md-4">
+      <a href="shop.html" class="category-card">
+        <img src="../images/fiddle-leaf-fig.jpg" alt="Outdoor Plants">
+        <div class="category-overlay">
+          <h3>Outdoor Plants</h3>
+          <p>18 products</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-12 col-md-4">
+      <a href="shop.html" class="category-card">
+        <img src="../images/snake-plant.jpg" alt="Planters & Pots">
+        <div class="category-overlay">
+          <h3>Planters &amp; Pots</h3>
+          <p>32 products</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="sg-section container">
+  <div class="display-flex flex-justify-between flex-align-center" style="margin-bottom: 2rem;">
+    <div>
+      <p class="label-accent" style="font-style: italic;">curated for you</p>
+      <h2>Featured Plants</h2>
+    </div>
+    <a href="shop.html" class="view-all-link">View All →</a>
+  </div>
+  
+  <div class="grid gap">
+    <div class="col-12 col-md-3">
+      <div class="product-card">
+        <div class="product-image-wrapper">
+          <a href="product.html"><img src="../images/fiddle-leaf-fig.jpg" alt="Fiddle Leaf Fig"></a>
+          <button class="favorite-btn" onclick="this.classList.toggle('active')">♡</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Fiddle Leaf Fig</h3>
+          <div class="display-flex flex-justify-between flex-align-center">
+            <p class="product-price">$89</p>
+            <a href="checkout.html" class="btn-pill btn-sm">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="product-card">
+        <div class="product-image-wrapper">
+          <a href="product.html"><img src="../images/monstera.jpg" alt="Monstera Deliciosa"></a>
+          <button class="favorite-btn" onclick="this.classList.toggle('active')">♡</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Monstera Deliciosa</h3>
+          <div class="display-flex flex-justify-between flex-align-center">
+            <p class="product-price">$65</p>
+            <a href="checkout.html" class="btn-pill btn-sm">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="product-card">
+        <div class="product-image-wrapper">
+          <a href="product.html"><img src="../images/snake-plant.jpg" alt="Snake Plant"></a>
+          <button class="favorite-btn" onclick="this.classList.toggle('active')">♡</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Snake Plant</h3>
+          <div class="display-flex flex-justify-between flex-align-center">
+            <p class="product-price">$45</p>
+            <a href="checkout.html" class="btn-pill btn-sm">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="product-card">
+        <div class="product-image-wrapper">
+          <a href="product.html"><img src="../images/pothos.jpg" alt="Golden Pothos"></a>
+          <button class="favorite-btn" onclick="this.classList.toggle('active')">♡</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Golden Pothos</h3>
+          <div class="display-flex flex-justify-between flex-align-center">
+            <p class="product-price">$32</p>
+            <a href="checkout.html" class="btn-pill btn-sm">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / VALUE PROPS -->
+<section class="sg-section container" id="about">
+  <div class="card soft">
+    <div class="grid gap">
+      <div class="col-12 col-md-6">
+        <p class="label-accent" style="font-style: italic;">why neon kactus</p>
+        <h2>Plants With Purpose</h2>
+        <p class="body-text">
+          Every plant in our collection is hand-selected for quality, sustainability, and beauty. We partner with local growers to bring you the healthiest specimens.
+        </p>
+        <div class="grid gap">
+          <div class="col-6">
+            <p class="value-title">Free Shipping</p>
+            <p class="value-desc">Orders over $75</p>
+          </div>
+          <div class="col-6">
+            <p class="value-title">Plant Guarantee</p>
+            <p class="value-desc">30-day health promise</p>
+          </div>
+          <div class="col-6">
+            <p class="value-title">Expert Care Tips</p>
+            <p class="value-desc">With every purchase</p>
+          </div>
+          <div class="col-6">
+            <p class="value-title">Eco Packaging</p>
+            <p class="value-desc">100% recyclable</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="../images/pothos.jpg" alt="Our plants" style="width: 100%; height: 350px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="sg-section container newsletter-section">
+  <div class="newsletter-content">
+    <p class="label-accent" style="font-style: italic;">stay in the loop</p>
+    <h2 class="newsletter-title">Join the Plant Club</h2>
+    <p>Get care tips, new arrivals, and exclusive offers delivered to your inbox.</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Enter your email" class="input-hotdog">
+      <button class="btn-pill">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer container">
+  <div class="grid gap">
+    <div class="col-12 col-md-3">
+      <h3 class="footer-brand">NEON KACTUS®</h3>
+      <p class="footer-desc">Premium plants &amp; planters for modern living.</p>
+    </div>
+    <div class="col-6 col-md-3">
+      <h4 class="footer-heading">Shop</h4>
+      <ul class="footer-links">
+        <li><a href="shop.html">All Plants</a></li>
+        <li><a href="shop.html">Indoor</a></li>
+        <li><a href="shop.html">Outdoor</a></li>
+        <li><a href="shop.html">Planters</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md-3">
+      <h4 class="footer-heading">Help</h4>
+      <ul class="footer-links">
+        <li><a href="#">Care Guide</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-3">
+      <h4 class="footer-heading">Connect</h4>
+      <ul class="footer-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Neon Kactus. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
